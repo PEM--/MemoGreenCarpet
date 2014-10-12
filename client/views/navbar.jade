@@ -1,0 +1,5 @@
+template(name='navbar')
+  +SequentialLayout id='menuItems' target='header' direction='X'
+    each routes
+      +Surface id=name size='[150, undefined]' class='unselected'
+        #header.items= options.menuName

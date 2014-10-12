@@ -1,0 +1,17 @@
+head
+  title Memory game on a green carpet
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, maximum-scale=1, user-scalable=no')
+  meta(name='mobile-web-app-capable', content='yes')
+  meta(name='apple-mobile-web-app-capable', content='yes')
+  meta(name='apple-mobile-web-app-status-bar-style', content='black')
+body
+
+template(name='layout')
+  +HeaderFooterLayout headerSize='50' footerSize='0'
+    +navbar
+    +routeCtrl
+
+template(name='routeCtrl')
+  +RenderController target='content'
+    +yield

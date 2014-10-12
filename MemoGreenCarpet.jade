@@ -1,5 +1,10 @@
 head
   title Memory game on a green carpet
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, maximum-scale=1, user-scalable=no')
+  meta(name='mobile-web-app-capable', content='yes')
+  meta(name='apple-mobile-web-app-capable', content='yes')
+  meta(name='apple-mobile-web-app-status-bar-style', content='black')
 body
 
 template(name='layout')
@@ -14,7 +19,7 @@ template(name='navbar')
         #header.items= options.menuName
 
 template(name='cntCtrl')
-  +RenderController target='content' class='green-bg'
+  +RenderController target='content'
     +yield
 
 template(name='home')
@@ -22,9 +27,9 @@ template(name='home')
     +Surface size='[undefined, 30]' align='[.5, .15]' origin='[.5, .5]'
       h1 Memory
       p on a green carpet
-    +Flipper size='[153, 230]' align='[.5, .6]'  origin='[.5, .5]' translate='[0,0,1]'
+    +Flipper size='[153, 230]' align='[.5, .6]'  origin='[.5, .5]' translate='[0,0,100]'
       +Surface id='card_1c' class='card' target='front' size='[153, 230]' align='[.5, .5]'  origin='[.5, .5]'
-        img.card(src='card_1c.svg')
+        img.card(src='joker_black.svg')
       +Surface id='card_back' class='card' target='back' size='[153, 230]' align='[.5, .5]' origin='[.5, .5]'
         img.card(src='card_back.svg')
 

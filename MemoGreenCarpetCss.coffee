@@ -2,6 +2,13 @@ if Meteor.isClient
   Meteor.startup ->
     css = new CSSC
 
+    css.add '*',
+      # Prevent selection
+      webkitTouchCallout: 'none'
+      webkitUserSelect: 'none'
+      userSelect: 'none'
+      outline: CSSC.x 0
+
     css.add '.items',
       lineHeight: CSSC.x 40
 

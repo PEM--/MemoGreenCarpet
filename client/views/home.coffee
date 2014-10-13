@@ -1,4 +1,6 @@
 Template.home.rendered = ->
+  console.log 'Rendered'
+
   card_1c = FView.byId 'card_1c'
   card_1c.surface.on CLICK_EVT, ->
     card_1c.parent.view.setAngle Math.PI,

@@ -1,7 +1,8 @@
 css = new CSSC
 
 css.add 'html',
-  background: 'radial-gradient(ellipse at center, #0e9100 0%,#005d22 100%)'
+  background: '#005d22'
+  backgroundImage: 'radial-gradient(ellipse at center, #0e9100 0%,#005d22 100%)'
   color: CSSC.yellow
   textAlign: 'center'
   fontFamily: 'Limelight'

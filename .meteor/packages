@@ -4,20 +4,21 @@
 # but you can also edit it by hand.
 
 # Regular packages
-meteor
-webapp
-logging
-tracker
-session
-ddp
-mongo
-blaze
-spacebars
-templating
-random
-ejson
-reload
-autoupdate
+meteor-platform
+#meteor
+#webapp
+#logging
+#tracker
+#session
+#ddp
+#mongo
+#blaze
+#spacebars
+#templating
+#random
+#ejson
+#reload
+#autoupdate
 
 # Personal packages
 coffeescript
